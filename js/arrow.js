@@ -99,47 +99,47 @@ console.log(`------------  NAMU DARBAI -1-  ------------`);
 
 
 //Funkcijos:
-//- masyvo ilgi
-const pvz = [1, 2, 3, 0, 2];
-const arrayIlgis = a => a.length;
-console.log(`Masyvo ilgis: ${arrayIlgis(pvz)}`);
+//- masyvo ilgis
+const mas = [1, 8, 3, 0, 2, 4, 10];
+const arrle = a => a.length;
+console.log(`Masyvo ilgis: ${arrle(mas)}`);
 
-//- teksto ilgi
-const pvz2 = `begemotas`;
-const stringIlgis = a => a.length;
-console.log(`Teksto ilgis: ${stringIlgis(pvz2)}`);
+//- teksto ilgis
+const text = `pomidoras`;
+const len = a => a.length;
+console.log(`Teksto ilgis: ${len(text)}`);
 
 //- pirma teksto raide
-const pvz3 = `begemotas`;
-const pirma = a => a.charAt(0);
-console.log(`Pirma teksto raide: ${pirma(pvz3)}`);
+const fi = `pomidoras`;
+const pirm = a => a.charAt(0);
+console.log(`Pirma teksto raide: ${pirm(fi)}`);
 
 //- paskutine teksto raide
-const pvz4 = `begemotas`;
-const paskutine = a => a.charAt(a.length -1);
-console.log(`Paskutine teksto raide: ${paskutine(pvz4)}`);
+const la = `pomidoras`;
+const pask = a => a.charAt(a.length -1);
+console.log(`Paskutine teksto raide: ${pask(la)}`);
 
 //- vidurine teksto raide
-const pvz5 = `begemotas`;
-const vidurine = a => [a[(a.length / 2) | 0]];
-console.log(`Vidurine teksto raide: ${vidurine(pvz5)}`);
+const mi = `pomidoras`;
+const vid = a => [a[(a.length / 2) | 0]];
+console.log(`Vidurine teksto raide: ${vid(mi)}`);
 
-//- triju skaiciu vidurki
-const aa = 2;
-const bb = 4;
-const cc = 12;
-const vidurkis1 = (a, b, c) => (a + b + c) / 3;
-console.log(`Skaiciu vidurkis: ${vidurkis1(aa, bb, cc)}`);
+//- triju skaiciu vidurkis
+const aa = 4;
+const bb = 0;
+const cc = 50;
+const vidurk = (a, b, c) => (a + b + c) / 3;
+console.log(`Skaiciu vidurkis: ${vidurk(aa, bb, cc)}`);
 
-//- EXTRA triju masyvo skaiciu vidurki
-const pvz7 = [8, 5, 2];
-const vidurkis2 = a => (a[0] + a[1] + a[2]) / a.length;
-console.log(`Masyvo skaiciu vidurkis: ${vidurkis2(pvz7)}`);
+//- EXTRA triju masyvo skaiciu vidurkis
+const mavi = [11, 33, 22];
+const vidur = a => (a[0] + a[1] + a[2]) / a.length;
+console.log(`Masyvo skaiciu vidurkis: ${vidur(mavi)}`);
 
 //- pasisveikinimo sakinys, kur duodamas tik vardas: "Sveiki, as esu [Vardenis]!"
-const pvz8 = `Robotas`;
-const manoVardas = a => [a];
-console.log(`Sveiki, as esu ${manoVardas(pvz8)}!`);
+const pas = `Pomidoras`;
+const vard = a => [a];
+console.log(`Sveiki, as esu ${vard(pas)}!`);
 
 
 
@@ -152,148 +152,149 @@ console.log(`------------  NAMU DARBAI -2-  ------------`);
 
 console.log('************************************************');
 
-// -  masyvo ilgi
-function arrIlgis(arr){
+// -  masyvo ilgis
+function masil1 (arr){
     return arr.length
 }
-const arrIlgis1 = function (arr){
+const masil2 = function (arr){
     return arr.length
 }
-const arrIlgis2 = (arr) => {
+const masil3 = (arr) => {
     return arr.length
 }
 
-const arrIlgis3 = (arr) => arr.length
+const masil4 = (arr) => arr.length
 
 
-console.log(arrIlgis([1,2,3,4,5]));
-console.log(arrIlgis1([1,2,3,4,5]));
-console.log(arrIlgis2([1,2,3,4,5]));
-console.log(arrIlgis3([1,2,3,4,5]));
+console.log(masil1([1, 2, 3, 4]));
+console.log(masil2([1, 2, 3, 4, 5]));
+console.log(masil3([1, 2, 3, 4, 5, 6]));
+console.log(masil4([1, 2, 3, 4, 5, 6, 7]));
 
 console.log('************************************************');
 
-// -  texto ilgi
-function strIlgis (str){
+// -  texto ilgis
+function ilg1 (str){
     return str.length
 }
-const strIlgis1 = function (str){
+const ilg2 = function (str){
     return str.length
 }
-const strIlgis2 = (str) => {
+const ilg3 = (str) => {
     return str.length
 }
-const strIlgis3 = (str) => str.length
+const ilg4 = (str) => str.length
 
-console.log(strIlgis(`asdfgh`));
-console.log(strIlgis1(`asdfgh`));
-console.log(strIlgis2(`asdfgh`));
-console.log(strIlgis3(`asdfgh`));
+console.log(ilg1(`pomidoras`));
+console.log(ilg2(`ananasas`));
+console.log(ilg3(`ridikas`));
+console.log(ilg4(`bulve`));
 
 console.log('************************************************');
 
 // -  pirma teksto raide
-function pirmaRaide(text){
+function pir1(text){
     return text[0]
 }
-const pirmaRaide1 = function (text){
+const pir2 = function (text){
     return text[0]
 }
-const pirmaRaide2 = (text) => {
+const pir3 = (text) => {
     return text.charAt(0)
 }
-const pirmaRaide3 = (text) => text[0]
+const pir4 = (text) => text[0]
 
-console.log(pirmaRaide(`asdfg`));
-console.log(pirmaRaide1(`asdfg`));
-console.log(pirmaRaide2(`asdfg`));
-console.log(pirmaRaide3(`asdfg`));
+console.log(pir1(`pomidoras`));
+console.log(pir2(`ananasas`));
+console.log(pir3(`ridikas`));
+console.log(pir4(`bulve`));
 
 console.log('************************************************');
 
 // - paskutine teksto raide
-function paskutineRaide(text){
+function pask1 (text){
     return text.slice(-1)
 }
-const paskutineRaide1 = function(text){
+const pask2 = function(text) {
     return text.slice(-1)
 }
-const paskutineRaide2 = (text)=>{
+const pask3 = (text) => {
     return text.slice(-1)
 }
-const paskutineRaide3 = (text) => text.slice(-1)
+const pask4 = (text) => text.slice(-1)
 
-console.log(paskutineRaide(`asdfgh`));
-console.log(paskutineRaide1(`asdfgh`));
-console.log(paskutineRaide2(`asdfgh`));
-console.log(paskutineRaide3(`asdfgh`));
+console.log(pask(`pomidoras`));
+console.log(pask1(`bulve`));
+console.log(pask2(`duona`));
+console.log(pask3(`vanduo`));
 
 console.log('************************************************');
 
 // - vidurine teksto raide
-function middle(text){
+function midd1(text){
     if (text.length % 2 === 0){
         return `${text[(text.length/2)-1]}${text[Math.floor(text.length/2)]}`
     }
     else{
     return text[Math.floor(text.length/2)];}
 }
-const middle1 =function (text){
+const midd2 = function (text){
     if (text.length % 2 === 0){
         return `${text[(text.length/2)-1]}${text[Math.floor(text.length/2)]}`
     }
     else{
     return text[Math.floor(text.length/2)];}
 }
-const middle2 = (text) => {
+const midd3 = (text) => {
     if (text.length % 2 === 0){
         return `${text[(text.length/2)-1]}${text[Math.floor(text.length/2)]}`
     }
     else{
     return text[Math.floor(text.length/2)];}
 }
-const middle3 = (text) => text.length % 2 === 0 ? `${text[(text.length/2)-1]}${text[Math.floor(text.length/2)]}` : text[Math.floor(text.length/2)];
+const midd4 = (text) => text.length % 2 === 0 ? `${text[(text.length/2)-1]}${text[Math.floor(text.length/2)]}` : text[Math.floor(text.length/2)];
 
 
-console.log(middle(`asdfg`));
-console.log(middle1(`asdfgh`));
-console.log(middle2(`asdfg`));
-console.log(middle3(`asdfgh`));
+console.log(midd1(`pomidoras`));
+console.log(midd2(`ananasas`));
+console.log(midd3(`agurkas`));
+console.log(midd4(`bulve`));
 
 console.log('************************************************');
 
-// - triju skaiciu vidurki
-function average(a, b, c){
+// - triju skaiciu vidurkis
+function ave1(a, b, c){
     return (a+b+c)/3
 }
-const average1 = function (a, b, c){
+const ave2 = function (a, b, c){
     return (a+b+c)/3
 }
-const average2 = (a, b, c) =>{
+const ave3 = (a, b, c) =>{
     return (a+b+c)/3
 }
-const average3 = (a, b, c) => (a+b+c)/3
+const ave4 = (a, b, c) => (a+b+c)/3
 
-console.log(average(3, 9, 27));
-console.log(average1(3, 9, 27));
-console.log(average2(3, 9, 27));
-console.log(average3(3, 9, 27));
-// - pasisveikinimo sakinysm kur duodamas tik vardas: " Sveiki, as esu Vardenis!"
-function pasisveikinimas(vardas){
-    return `Sveiki, as esu ${vardas}!`
-}
-const pasisveikinimas1 = function(vardas){
-    return `Sveiki, as esu ${vardas}!`
-}
-const pasisveikinimas2 = (vardas) => {
-    return `Sveiki, as esu ${vardas}!`
-}
-const pasisveikinimas3 = (vardas) => `Sveiki, as esu ${vardas}!`;
+console.log(ave1(8, 5, 11));
+console.log(ave2(2, 0, 16));
+console.log(ave3(1, 6, 20));
+console.log(ave4(22, 33, 44));
 
-console.log(pasisveikinimas(`Vardenis`));
-console.log(pasisveikinimas1(`Vardenis`));
-console.log(pasisveikinimas2(`Vardenis`));
-console.log(pasisveikinimas3(`Vardenis`));
+// - pasisveikinimo sakinys, kur duodamas tik vardas: " Sveiki, as esu Vardenis!"
+function pasis1(Jonas){
+    return `Sveiki, as esu ${Jonas}!`
+}
+const pasis2 = function(Maryte){
+    return `Sveiki, as esu ${Maryte}!`
+}
+const pasis3 = (Ona) => {
+    return `Sveiki, as esu ${Ona}!`
+}
+const pasis4 = (Jurgis) => `Sveiki, as esu ${Jurgis}!`;
+
+console.log(pasis1(`Vardenis`));
+console.log(pasis2(`Vardenis`));
+console.log(pasis3(`Vardenis`));
+console.log(pasis4(`Vardenis`));
 
 // .map .filter .sort .reduce
 
@@ -301,31 +302,34 @@ console.log(pasisveikinimas3(`Vardenis`));
 console.log(`------------  NAMU DARBAI -3-  ------------`);
 
 
-const arrLength = a => a.Length;
-console.log(arrLength[1, 2, 5]);
+const leng = a => a.length;
+console.log(leng([1, 2, 5, 8, 9]));
 
 console.log(`----------`);
 
-const textLenght = a => a.Length;
-console.log('tekstas');
+const tex = a => a.length;
+console.log(tex('pomidoras'));
 
 console.log(`----------`);
 
-const firstLetter = a => a.substring(0,1);
-console.log(firstLetter('tekstas'));
+const file = a => a.substring(0,1);
+console.log(file('pomidoras'));
 
 console.log(`----------`);
 
-const lastLetter = a => a[a.Length - 1];
-console.log(lastLetter('tekstas'));
+
+const lasle = a => a[a.length - 1];
+console.log(lasle('pomidoras'));
 
 console.log(`----------`);
 
-const middleLetter = a => a.substring(mMath.ceil(a.Length / 2 - 1), a.Length % 2 === 0 ? 2 : 1);
-console.log(middleLetter('tekstas'));
+const middle = a => a.substring(Math.ceil(a.Length / 2 - 1), a.Length % 2 === 0 ? 2 : 1);
+console.log(middle('pomidoras'));
 
-const hello = a => 'Sveiki, as esu' + a;
-console.log(hello(Vardenis));
+console.log(`----------`);
+
+const laba = a => 'Sveiki, as esu' + a;
+console.log(laba(` Pomidoras`));
 
 console.log(`----------`);
 
